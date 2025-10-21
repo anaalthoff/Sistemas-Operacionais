@@ -1,5 +1,4 @@
-/* recebe uma string na linha de comando e a transforma numa string equivalente mas
-com todos os caracteres em min´usculas */
+/* recebe uma string na linha de comando e a transforma numa string equivalente mas com todos os caracteres em minúsculas */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
