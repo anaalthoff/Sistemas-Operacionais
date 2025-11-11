@@ -13,6 +13,9 @@ int main(int argc, char* argv[]) {
   }
 
   /* verifica se a primeira string ocorre na segunda */
+  // strstr: procura por uma substring (needle) dentro de outra string (haystack).
+  // haystack → a string principal onde vamos procurar
+  // needle → a substring que queremos encontrar
   if (strstr(argv[2], argv[1])) {
       printf("A string '%s' ocorre na string '%s'\n", argv[1], argv[2]);
   } else {
