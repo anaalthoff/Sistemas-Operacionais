@@ -1,7 +1,7 @@
 /* exemplifica o uso da função main na sua forma mais geral em C*/
 
 #include <stdio.h>
-// int é o tipo de retorno da função main. Main retorna um númeor para o SO, 0 significa que terminou com sucesso
+// int é o tipo de retorno da função main. Main retorna um número para o SO, 0 significa que terminou com sucesso
 // int argc → argument count (contagem de argumentos). Inclui o nome do programa.
 // char* argv[] → argument vector (vetor de argumentos). É um array de strings (cadeias de caracteres terminado em '\0') que contém os argumentos passados na linha de comando
 int main (int argc, char* argv[]) {
