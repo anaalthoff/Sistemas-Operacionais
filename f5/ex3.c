@@ -54,3 +54,12 @@ int main(int argc, char *argv[])
 // Se o processo pai terminar antes de o filho terminar e o status de saída do filho ser recolhido, o filho torna-se um processo órfão e é adotado pelo processo init (PID 1), que se encarrega de fazer a colheita do status.
 
 // Se o pai terminar depois do filho, mas sem chamar waitpid(), o filho finalizado permanece como um processo zumbi até que o pai termine (ou até que o sistema seja reiniciado), desperdiçando uma pequena quantidade de recursos do sistema.
+
+// CHILD: value = 1, addr = 0x7ffd7f7f742c
+// PARENT: value = 0, addr = 0x7ffd7f7f742c
+
+// Endereços Virtuais: O endereço (addr = 0x7ffd7f7f742c) que é impresso é um endereço de memória virtual, não um endereço físico real.
+
+// Cópias Idênticas: O kernel do Linux (e outros sistemas Unix-like) copia o mapa de memória virtual do pai para o filho. Portanto, a variável value está localizada no mesmo endereço virtual em ambos os processos.
+
+// Memória Física: No entanto, o sistema de memória virtual do computador mapeia este endereço virtual para diferentes endereços de memória física (RAM) para o pai e para o filho.
