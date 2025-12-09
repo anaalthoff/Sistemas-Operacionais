@@ -1,11 +1,20 @@
 // Modifique o programa de tal forma que o processo pai abra um ficheiro de texto e transfira o seu conteúdo para o processo filho. Por sua vez o processo filho deve receber o conteúdo, passar todos os caracteres para maiúsculas e devolvê-los para o processo pai que os imprime no “stdout”.
 
+// O programa espera um nome de ficheiro como argumento quando o executas.
+// Esse ficheiro deve conter texto para que:
+// o pai leia o ficheiro
+// envie o conteúdo para o filho
+// o filho converta para maiúsculas
+// devolva ao pai
+// o pai imprima no stdout
+
 #include <sys/wait.h>
 #include <sys/socket.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
+#include <ctype.h>
 
 #define BUFFER_SIZE 1024
 
