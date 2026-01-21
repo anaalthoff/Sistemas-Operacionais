@@ -1,0 +1,5 @@
+ls
+pwd
+echo Ola
+whoami
+myhistory 3
