@@ -47,8 +47,10 @@ int main(int argc, char *argv[])
 // execlp substitui o processo e nunca retorna se tiver sucesso.
 // O kernel envia ao pai o sinal SIGCHLD quando o filho termina.
 // O processo pai espera o término do processo filho utilizando a chamada de sistema waitpid().
+
 // Compile o programa com:
 // $ gcc -Wall ex4.c -o ex4
 // E execute-o com um comando válido, por exemplo:
 // $ ./ex4 ls -l
+
 // O programa irá listar os arquivos do diretório atual, pois o processo filho executa o comando 'ls -l'.

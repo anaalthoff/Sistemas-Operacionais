@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 // $ gcc -Wall ex3.c -o ex3
 // E execute-o com:
 // $ ./ex3
+
 // Você verá a saída mostrando os valores e endereços das variáveis em ambos os processos. Note que os endereços podem ser iguais, mas os valores são diferentes, evidenciando a separação de memória entre os processos.
 
 // Porquê o waitpid() é Necessário?

@@ -138,7 +138,7 @@ Retorna também se um processo filho foi parado (via sinal SIGSTOP, p.ex.)
 ✔ WCONTINUED
 Retorna se um processo parado voltou a correr (SIGCONT)
 
-✔ WSTOPPED (sinónimo de WUNTRACED)
+✔ WSTOPPED (sinônimo de WUNTRACED)
 Retorna quando o filho entra em estado "stopped".
 Pode combinar opções:
 waitpid(pid, &status, WNOHANG | WUNTRACED);

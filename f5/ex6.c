@@ -1,7 +1,7 @@
 /*
 Altere o programa anterior por forma a que os comandos possam ser executados com
-argumentos. Sugest˜ao: use a fun¸c˜ao execvp (em vez de execlp) e use a a fun¸c˜ao strtok
-para separar o nomes do comando e os respectivos argumentos dados na “string”command
+argumentos. Sugestão: use a função execvp (em vez de execlp) e use a função strtok
+para separar o nomes do comando e os respectivos argumentos dados na “string” command
 */
 
 #include <sys/wait.h> // para waitpid()
