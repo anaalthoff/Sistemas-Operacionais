@@ -1,6 +1,6 @@
 // Considere o seguinte programa que implementa uma “pipe” entre processos pai e filho.
 // Pipe é um canal de comunicação unidirecional que pode ser usado para comunicação entre processos relacionados, como processos pai e filho.
-//Socket pair é usado para comunicação bidirecional entre processos, mas pipe é mais simples e adequado para comunicação unidirecional.
+// Socket pair é usado para comunicação bidirecional entre processos, mas pipe é mais simples e adequado para comunicação unidirecional.
 
 #include <sys/wait.h>
 #include <errno.h>

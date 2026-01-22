@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
         // sixzeof(string1) - tamanho da string1
         // Pai envia string1 ao filho
         // Pai espera o filho responder
-        //Imprime a resposta
+        // Imprime a resposta
         write(sockets[0], string1, sizeof(string1));
         read(sockets[0], buf, sizeof(buf));
         printf("message from %d-->%s\n", getpid(), buf);
